@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum - Pendaftaran</title>
+</head>
+<body>
+
+    <!-- Area Navigasi -->
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+    </nav>
+
+    <!-- Garis Pemisah Horizontal -->
+    <hr>
+
+    <!-- Judul Halaman -->
+    <h2>Form Pendaftaran Praktikan</h2>
+
+    <!-- Formulir Pendaftaran -->
+    <form method="post" action="">
+        <table>
+            <!-- Baris 1: Nama Lengkap -->
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td>: <input type="text" id="nama" name="nama"></td>
+            </tr>
+
+            <!-- Baris 2: Password -->
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td>: <input type="password" id="pass" name="pass"></td>
+            </tr>
+
+            <!-- Baris 3: NIM -->
+            <tr>
+                <td><label for="nim">NIM</label></td>
+                <td>: <input type="number" id="nim" name="nim"></td>
+            </tr>
+
+            <!-- Baris 4: Tanggal Lahir -->
+            <tr>
+                <td><label for="tgl">Tanggal Lahir</label></td>
+                <td>: <input type="date" id="tgl" name="tgl"></td>
+            </tr>
+
+            <!-- Baris 5: Jenis Kelamin (Radio Button) -->
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>: 
+                    <input type="radio" id="jk_l" name="jk" value="L">
+                    <label for="jk_l">Laki-Laki</label>
+                    <input type="radio" id="jk_p" name="jk" value="P">
+                    <label for="jk_p">Perempuan</label>
+                </td>
+            </tr>
+
+            <!-- Baris 6: Minat Bidang (Checkbox) -->
+            <tr>
+                <td>Minat bidang</td>
+                <td>: 
+                    <input type="checkbox" id="minat_web" name="minat" value="web">
+                    <label for="minat_web">Web</label>
+                    <input type="checkbox" id="minat_jaringan" name="minat" value="network">
+                    <label for="minat_jaringan">Jaringan</label>
+                    <input type="checkbox" id="minat_design" name="minat" value="Design/Modeling">
+                    <label for="minat_design">Design/Modeling</label>
+                </td>
+            </tr>
+
+            <!-- Baris 7: Program Studi (Dropdown) -->
+            <tr>
+                <td><label for="prodi">Program Studi</label></td>
+                <td>: 
+                    <select id="prodi" name="prodi">
+                        <option value="IF">S1 Teknik Informatika</option>
+                        <option value="SI">S1 Sistem Informasi</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Baris 8: Alasan Mendaftar -->
+            <tr>
+                <td style="vertical-align: top;"><label for="alasan">Alasan Mendaftar</label></td>
+                <td>: <textarea id="alasan" name="alasan" rows="3" cols="20"></textarea></td>
+            </tr>
+
+            <!-- Baris 9: Tombol Kirim & Reset -->
+            <tr>
+                <td></td>
+                <td>&nbsp;&nbsp;<input type="submit" value="Kirim"> <input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
